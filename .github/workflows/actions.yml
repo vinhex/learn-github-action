@@ -1,0 +1,14 @@
+name: "Run github actions"
+
+on: ["push"]
+
+env:
+  NAME: {{ $vars.NAME }}
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    environment: Mainnet
+    steps:
+      - name: echo vars
+        run: echo $NAME
