@@ -3,7 +3,7 @@ name: "Run github actions"
 on: ["push"]
 
 env:
-  NAME: {{ $vars.NAME }}
+  NAME: {{ $vars.MY_NAME }}
 
 jobs:
   echo:
@@ -11,4 +11,4 @@ jobs:
     environment: Mainnet
     steps:
       - name: echo vars
-        run: echo $NAME
+        run: echo $MY_NAME
