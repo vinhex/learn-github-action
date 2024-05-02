@@ -8,7 +8,7 @@ env:
 jobs:
   echo:
     runs-on: ubuntu-latest
-    environment: Mainnet
+    environment: mainnet
     steps:
       - name: echo vars
         run: echo $MY_NAME
