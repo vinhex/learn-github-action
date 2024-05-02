@@ -8,4 +8,4 @@ jobs:
     environment: mainnet
     steps:
       - name: echo vars
-        run: echo "hi! $MY_NAME"
+        run: echo {{ $vars.MY_NAME }}
